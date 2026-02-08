@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // this statement will be executed
+    cout << "First Statement" << endl;
+
+    goto skip_in_between;
+    cout << "Second Statement" << endl; // will be skipped
+
+    skip_in_between:
+    cout << "Third Statement" << endl;
+    return 0;
+}
